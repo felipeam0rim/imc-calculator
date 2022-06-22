@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>IMC Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de IMC</h1>
+    </header>
+    <main>
+      <div class="resumo">
+        <h3>Cálculo IMC</h3>
+        <p>
+          IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+          Organização Mundial de Saúde para calcular o peso ideal de cada
+          pessoa.
+        </p>
+        <p>
+          O índice é calculado da seguinte maneira: divide-se o peso do paciente
+          pela sua altura elevada ao quadrado.
+        </p>
+        <p>
+          Diz-se que o indivíduo tem peso normal quando o resultado do IMC está
+          entre 18,5 e 24,9.
+        </p>
+        <p>
+          Quer descobrir seu IMC? Insira seu peso e sua altura nos campos
+          abaixo.
+        </p>
+      </div>
+      <h2>Calcule seu IMC e sua ingestão ideal diária de água!</h2>
+      <form class="form" action="index.html" method="get">
+        <div id="imc">
+          <p id="label-imc"></p>
+          <p id="content-imc"></p>
+        </div>
+        <div class="content">
+          <div class="item">
+            <label for="peso">Peso(kg):</label>
+            <input
+              minlength="1"
+              maxlength="5"
+              id="peso"
+              name="peso"
+              type="number"
+              placeholder="Digite seu peso"
+              required
+            />
+          </div>
+          <div class="item">
+            <label for="altura">Altura(cm):</label>
+            <input
+              minlength="2"
+              maxlength="3"
+              id="altura"
+              name="altura"
+              type="number"
+              placeholder="Digite sua altura em centímetros"
+              required
+            />
+          </div>
+          <div class="button">
+            <button type="button" onclick="mostrarResultado()">
+              Calcular IMC
+            </button>
+            <button type="reset" onclick="limparResultado()">Limpar</button>
+          </div>
+        </div>
+        <div id="agua">
+          <p id="label-agua"></p>
+          <p id="content-agua"></p>
+        </div>
+      </form>
+    </main>
+    <footer>Todos os direitos reservados. Calculadora de IMC &copy;</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
