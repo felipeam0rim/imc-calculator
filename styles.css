@@ -3,18 +3,33 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 header {
   background-image: url(./img/banner.jpg);
   height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 310px;
-  font-size: 25px;
+  width: 100%;
+  font-size: 2.5rem;
 }
 
 h1 {
   color: white;
+  margin-left: 310px;
 }
 
 .resumo {
@@ -35,7 +50,7 @@ h1 {
 h2 {
   color: #007c8a;
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-bottom: 16px;
 }
 
@@ -43,6 +58,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   background-color: #eeeeee;
+  margin-bottom: 6rem;
 }
 
 .content {
@@ -60,14 +76,14 @@ h2 {
 
 .item label {
   /* color: #007c8a; */
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .item input {
   width: 100%;
   margin: 1px;
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   height: 38px;
   border: none;
   border-radius: 5px;
@@ -86,7 +102,7 @@ button {
   color: white;
   border: #007c8a 5px solid;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 button:hover {
@@ -101,7 +117,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-size: 30px;
+  font-size: 3rem;
   color: white;
   border: #007c8a 10px solid;
   background-color: #494949;
@@ -113,7 +129,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-size: 30px;
+  font-size: 3rem;
   color: white;
   border: #007c8a 10px solid;
   background-color: #494949;
@@ -122,7 +138,7 @@ button:hover {
 #content-imc {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-size: 3.5rem;
   color: rgb(231, 150, 0);
   font-weight: bold;
 }
@@ -130,19 +146,17 @@ button:hover {
 #content-agua {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-size: 3.5rem;
   color: rgb(231, 150, 0);
   font-weight: bold;
 }
 
 footer {
-  height: 80px;
+  height: 8rem;
   background-color: #007c8a;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+  margin-top: auto;
 }
